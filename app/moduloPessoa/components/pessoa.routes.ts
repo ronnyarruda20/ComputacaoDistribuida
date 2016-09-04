@@ -3,6 +3,7 @@ import { PessoaComponent } from './pessoa.component';
 
 
 
-export const AlunosRoutes: RouterConfig = [
-	{ path: 'listar-Pessoa', component: PessoaComponent }
+export const PessoaRoutes: RouterConfig = [
+	{ path: 'listar-pessoa', component: PessoaComponent },
+	{ path: '', redirectTo: '/listar-Pessoa', terminal: true }
 ];
