@@ -1,0 +1,66 @@
+
+<div class="container">
+	<header class="row">
+
+	</header>
+	<div class="row">
+		<div role="main" class="col-md-6 col-md-push-3">
+
+			
+			<!-- <h1>Adicionar alguem</h1> -->
+			<br/>
+			<form >
+
+				<div class="form-group">
+					<input type="text" class="form-control col-md4"  required 
+					[(ngModel)]="pessoaSelecionado.nome" name="nome" placeholder="Nome">
+				</div>
+
+				<div class="form-group">	
+					<input type="text" class="form-control" 
+					[(ngModel)]="pessoaSelecionado.profissao" name="profissao" placeholder="Profissão">
+				</div>
+
+				<button type="button" class="btn btn-default"
+				 (click)="adicionarPessoa(pessoaSelecionado)">
+					Add Pessoa
+				</button>
+			</form>
+
+			<br/>
+			<table class="table table-striped">
+				<tr>
+					<th>ID</th>
+					<th>Nome</th>
+					<th>Cargo</th>
+				</tr>
+				<tr *ngFor="let pessoa of pessoas">
+					<td>{{pessoa.id}}</td>
+					<td>{{pessoa.nome}}</td>
+					<td>{{pessoa.profissao}}</td>
+				</tr>
+			</table>
+			
+		</div>
+		<aside role="complementary" class="col-md-3 col-md-push-3">
+
+		</aside>
+		<nav class="col-md-3 col-md-pull-9">
+
+		</nav>
+	</div>
+	<footer class="row">
+
+	</footer>
+</div>
+
+<div class="col-md-9" role="main">
+
+
+<!-- <div>
+  <label>Nome: </label> <input />
+  <button (click)="add(heroName.value); pessoa.nome=''">
+    Add
+  </button>
+
+</div> -->
