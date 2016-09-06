@@ -2,5 +2,5 @@
 /node_modules
 /npm-debug.log
 /npm-debug.log.2990676452
-*js.map
-*js
+*.js.map
+*.js
